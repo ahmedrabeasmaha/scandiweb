@@ -1,0 +1,1 @@
+<script src="/view/productViews/js/script.js"></script>

@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+:root {
+  --frace-blue: #1789fc;
+  --spanish-blue: #296eb4;
+  --honey-well: #fdb833;
+  --orange-yellow: #ffd07b;
+  --copper: #b1740f;
+  --black: #000000;
+  --white: #ffffff;
+  --danger: #ec4e20;
+  --submit: #46acc2;
+  --shadow: #4c4e61;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: var(--spanish-blue);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 5rem;
+  box-sizing: border-box;
+}
+
+.title {
+  max-width: 50%;
+}
+
+.fill {
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 50px 13px;
+  outline: 0;
+  border: 1px solid var(--black);
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  margin-right: 0.5rem;
+}
+.fill::after {
+  content: "";
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+.fill:hover::after {
+  top: 0px;
+  left: 0px;
+}
+
+.add::after {
+  background-color: var(--submit);
+}
+
+.mass::after {
+  background-color: var(--danger);
+}
+
+.buttons {
+  max-width: 50%;
+  display: flex;
+  justify-content: end;
+}
+
+.margin-right {
+  margin-right: 1rem;
+}
+
+.line {
+  height: 0.1rem;
+  background-color: var(--copper);
+  margin: 0 5rem;
+}
+
+.box {
+  border-radius: 1rem;
+  background-color: var(--frace-blue);
+  color: var(--black);
+  box-shadow: 0px 30px 40px -20px var(--shadow);
+  padding: 2rem;
+  margin: 1rem;
+  flex: 0 0 10.14%;
+  box-sizing: content-box;
+  min-height: 15rem;
+}
+
+.red {
+  border-top: 0.2rem solid var(--copper);
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 5rem;
+  box-sizing: border-box;
+}
+
+input[type=checkbox] {
+  height: 2rem;
+  accent-color: var(--spanish-blue);
+  margin: 0;
+  cursor: pointer;
+}
+input[type=checkbox]:not(.switch) {
+  width: 1.2rem;
+}
+
+.footer {
+  text-align: center;
+  width: 100%;
+  margin-top: auto;
+}
+
+.form-field {
+  height: 2rem;
+  padding: 0 1rem;
+  border: 2px solid #ddd;
+  border-radius: 0.5rem;
+  outline: 0;
+  transition: 0.2s;
+  min-width: 10rem;
+}
+
+.input-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  box-sizing: border-box;
+  margin-bottom: 2rem;
+}
+
+.container {
+  margin: 1rem 5rem 1rem 5rem;
+}
+
+.input-label {
+  min-width: 8rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.validation {
+  color: var(--white);
+  background-color: var(--danger);
+}
+
+fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
